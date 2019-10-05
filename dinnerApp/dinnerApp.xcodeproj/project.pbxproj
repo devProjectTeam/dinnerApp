@@ -8,16 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		5844E5062344397700BA0E56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5844E5052344397700BA0E56 /* AppDelegate.swift */; };
-		5844E5082344397700BA0E56 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5844E5072344397700BA0E56 /* ViewController.swift */; };
+		5844E5082344397700BA0E56 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5844E5072344397700BA0E56 /* TableViewController.swift */; };
 		5844E50B2344397700BA0E56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5844E5092344397700BA0E56 /* Main.storyboard */; };
 		5844E50D2344397900BA0E56 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5844E50C2344397900BA0E56 /* Assets.xcassets */; };
 		5844E5102344397900BA0E56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5844E50E2344397900BA0E56 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5844E5022344397700BA0E56 /* dinnerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dinnerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5844E5022344397700BA0E56 /* What's For Dinner?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "What's For Dinner?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5844E5052344397700BA0E56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5844E5072344397700BA0E56 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5844E5072344397700BA0E56 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		5844E50A2344397700BA0E56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5844E50C2344397900BA0E56 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5844E50F2344397900BA0E56 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		5844E5032344397700BA0E56 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5844E5022344397700BA0E56 /* dinnerApp.app */,
+				5844E5022344397700BA0E56 /* What's For Dinner?.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,7 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				5844E5052344397700BA0E56 /* AppDelegate.swift */,
-				5844E5072344397700BA0E56 /* ViewController.swift */,
+				5844E5072344397700BA0E56 /* TableViewController.swift */,
 				5844E5092344397700BA0E56 /* Main.storyboard */,
 				5844E50C2344397900BA0E56 /* Assets.xcassets */,
 				5844E50E2344397900BA0E56 /* LaunchScreen.storyboard */,
@@ -81,7 +81,7 @@
 			);
 			name = dinnerApp;
 			productName = dinnerApp;
-			productReference = 5844E5022344397700BA0E56 /* dinnerApp.app */;
+			productReference = 5844E5022344397700BA0E56 /* What's For Dinner?.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -135,7 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5844E5082344397700BA0E56 /* ViewController.swift in Sources */,
+				5844E5082344397700BA0E56 /* TableViewController.swift in Sources */,
 				5844E5062344397700BA0E56 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,7 +289,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = skyenov.dinnerApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "What's For Dinner?";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -306,7 +306,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = skyenov.dinnerApp;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "What's For Dinner?";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
