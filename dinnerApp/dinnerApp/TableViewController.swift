@@ -14,8 +14,10 @@ class TableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-                                                                                                          
-        //print(dummyData[0][0])
+        
+        // we use self here to avoid changing the tab bar item title as well.
+        //see:stackoverflow.com/questions/25167458/changing-navigation-title-programmatically
+        self.navigationItem.title = "Select 3 choices"
         
     }
     

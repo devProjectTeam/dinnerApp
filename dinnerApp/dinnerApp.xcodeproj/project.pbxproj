@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3498D5A22349124000CB8EDB /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3498D5A12349124000CB8EDB /* SelectViewController.swift */; };
 		5844E5062344397700BA0E56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5844E5052344397700BA0E56 /* AppDelegate.swift */; };
 		5844E5082344397700BA0E56 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5844E5072344397700BA0E56 /* TableViewController.swift */; };
 		5844E50B2344397700BA0E56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5844E5092344397700BA0E56 /* Main.storyboard */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3498D5A12349124000CB8EDB /* SelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
 		5844E5022344397700BA0E56 /* What's For Dinner?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "What's For Dinner?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5844E5052344397700BA0E56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5844E5072344397700BA0E56 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +59,7 @@
 				5844E5052344397700BA0E56 /* AppDelegate.swift */,
 				5844E5072344397700BA0E56 /* TableViewController.swift */,
 				5844E5092344397700BA0E56 /* Main.storyboard */,
+				3498D5A12349124000CB8EDB /* SelectViewController.swift */,
 				5844E50C2344397900BA0E56 /* Assets.xcassets */,
 				5844E50E2344397900BA0E56 /* LaunchScreen.storyboard */,
 				5844E5112344397900BA0E56 /* Info.plist */,
@@ -136,6 +139,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5844E5082344397700BA0E56 /* TableViewController.swift in Sources */,
+				3498D5A22349124000CB8EDB /* SelectViewController.swift in Sources */,
 				5844E5062344397700BA0E56 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
