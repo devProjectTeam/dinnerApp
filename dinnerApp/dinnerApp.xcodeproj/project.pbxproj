@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		3498D5A22349124000CB8EDB /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3498D5A12349124000CB8EDB /* SelectViewController.swift */; };
+		58429D70235020EF00DA91E4 /* Places.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58429D6F235020EF00DA91E4 /* Places.swift */; };
+		58429D742350298800DA91E4 /* editPlacesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58429D732350298800DA91E4 /* editPlacesTableViewController.swift */; };
+		58429D7C23505F1500DA91E4 /* Messages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58429D7B23505F1500DA91E4 /* Messages.framework */; };
+		58429D7F23505F1500DA91E4 /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58429D7E23505F1500DA91E4 /* MessagesViewController.swift */; };
+		58429D8223505F1500DA91E4 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58429D8023505F1500DA91E4 /* MainInterface.storyboard */; };
+		58429D8423505F1700DA91E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58429D8323505F1700DA91E4 /* Assets.xcassets */; };
+		58429D8823505F1700DA91E4 /* dinnerAppiMessage.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 58429D7923505F1500DA91E4 /* dinnerAppiMessage.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5844E5062344397700BA0E56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5844E5052344397700BA0E56 /* AppDelegate.swift */; };
 		5844E5082344397700BA0E56 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5844E5072344397700BA0E56 /* TableViewController.swift */; };
 		5844E50B2344397700BA0E56 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5844E5092344397700BA0E56 /* Main.storyboard */; };
@@ -15,8 +22,40 @@
 		5844E5102344397900BA0E56 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5844E50E2344397900BA0E56 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		58429D8623505F1700DA91E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5844E4FA2344397700BA0E56 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58429D7823505F1500DA91E4;
+			remoteInfo = dinnerAppiMessage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		58429D8C23505F1700DA91E4 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				58429D8823505F1700DA91E4 /* dinnerAppiMessage.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		3498D5A12349124000CB8EDB /* SelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
+		58429D6F235020EF00DA91E4 /* Places.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Places.swift; sourceTree = "<group>"; };
+		58429D732350298800DA91E4 /* editPlacesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = editPlacesTableViewController.swift; sourceTree = "<group>"; };
+		58429D7923505F1500DA91E4 /* dinnerAppiMessage.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = dinnerAppiMessage.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		58429D7B23505F1500DA91E4 /* Messages.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Messages.framework; path = System/Library/Frameworks/Messages.framework; sourceTree = SDKROOT; };
+		58429D7E23505F1500DA91E4 /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		58429D8123505F1500DA91E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		58429D8323505F1700DA91E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		58429D8523505F1700DA91E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5844E5022344397700BA0E56 /* What's For Dinner?.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "What's For Dinner?.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5844E5052344397700BA0E56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5844E5072344397700BA0E56 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -27,6 +66,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		58429D7623505F1500DA91E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58429D7C23505F1500DA91E4 /* Messages.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5844E4FF2344397700BA0E56 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -37,10 +84,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		58429D7A23505F1500DA91E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58429D7B23505F1500DA91E4 /* Messages.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		58429D7D23505F1500DA91E4 /* dinnerAppiMessage */ = {
+			isa = PBXGroup;
+			children = (
+				58429D7E23505F1500DA91E4 /* MessagesViewController.swift */,
+				58429D8023505F1500DA91E4 /* MainInterface.storyboard */,
+				58429D8323505F1700DA91E4 /* Assets.xcassets */,
+				58429D8523505F1700DA91E4 /* Info.plist */,
+			);
+			path = dinnerAppiMessage;
+			sourceTree = "<group>";
+		};
 		5844E4F92344397700BA0E56 = {
 			isa = PBXGroup;
 			children = (
 				5844E5042344397700BA0E56 /* dinnerApp */,
+				58429D7D23505F1500DA91E4 /* dinnerAppiMessage */,
+				58429D7A23505F1500DA91E4 /* Frameworks */,
 				5844E5032344397700BA0E56 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				5844E5022344397700BA0E56 /* What's For Dinner?.app */,
+				58429D7923505F1500DA91E4 /* dinnerAppiMessage.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -58,6 +127,8 @@
 			children = (
 				5844E5052344397700BA0E56 /* AppDelegate.swift */,
 				5844E5072344397700BA0E56 /* TableViewController.swift */,
+				58429D732350298800DA91E4 /* editPlacesTableViewController.swift */,
+				58429D6F235020EF00DA91E4 /* Places.swift */,
 				5844E5092344397700BA0E56 /* Main.storyboard */,
 				3498D5A12349124000CB8EDB /* SelectViewController.swift */,
 				5844E50C2344397900BA0E56 /* Assets.xcassets */,
@@ -70,6 +141,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		58429D7823505F1500DA91E4 /* dinnerAppiMessage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58429D8923505F1700DA91E4 /* Build configuration list for PBXNativeTarget "dinnerAppiMessage" */;
+			buildPhases = (
+				58429D7523505F1500DA91E4 /* Sources */,
+				58429D7623505F1500DA91E4 /* Frameworks */,
+				58429D7723505F1500DA91E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = dinnerAppiMessage;
+			productName = dinnerAppiMessage;
+			productReference = 58429D7923505F1500DA91E4 /* dinnerAppiMessage.appex */;
+			productType = "com.apple.product-type.app-extension.messages";
+		};
 		5844E5012344397700BA0E56 /* dinnerApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5844E5142344397900BA0E56 /* Build configuration list for PBXNativeTarget "dinnerApp" */;
@@ -77,10 +165,12 @@
 				5844E4FE2344397700BA0E56 /* Sources */,
 				5844E4FF2344397700BA0E56 /* Frameworks */,
 				5844E5002344397700BA0E56 /* Resources */,
+				58429D8C23505F1700DA91E4 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				58429D8723505F1700DA91E4 /* PBXTargetDependency */,
 			);
 			name = dinnerApp;
 			productName = dinnerApp;
@@ -97,6 +187,9 @@
 				LastUpgradeCheck = 1030;
 				ORGANIZATIONNAME = skyenov;
 				TargetAttributes = {
+					58429D7823505F1500DA91E4 = {
+						CreatedOnToolsVersion = 10.3;
+					};
 					5844E5012344397700BA0E56 = {
 						CreatedOnToolsVersion = 10.3;
 					};
@@ -116,11 +209,21 @@
 			projectRoot = "";
 			targets = (
 				5844E5012344397700BA0E56 /* dinnerApp */,
+				58429D7823505F1500DA91E4 /* dinnerAppiMessage */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		58429D7723505F1500DA91E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58429D8423505F1700DA91E4 /* Assets.xcassets in Resources */,
+				58429D8223505F1500DA91E4 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5844E5002344397700BA0E56 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -134,19 +237,45 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		58429D7523505F1500DA91E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58429D7F23505F1500DA91E4 /* MessagesViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5844E4FE2344397700BA0E56 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5844E5082344397700BA0E56 /* TableViewController.swift in Sources */,
+				58429D742350298800DA91E4 /* editPlacesTableViewController.swift in Sources */,
 				3498D5A22349124000CB8EDB /* SelectViewController.swift in Sources */,
 				5844E5062344397700BA0E56 /* AppDelegate.swift in Sources */,
+				58429D70235020EF00DA91E4 /* Places.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		58429D8723505F1700DA91E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 58429D7823505F1500DA91E4 /* dinnerAppiMessage */;
+			targetProxy = 58429D8623505F1700DA91E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		58429D8023505F1500DA91E4 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58429D8123505F1500DA91E4 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		5844E5092344397700BA0E56 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -166,6 +295,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		58429D8A23505F1700DA91E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = dinnerAppiMessage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = skyenov.dinnerApp.dinnerAppiMessage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		58429D8B23505F1700DA91E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "iMessage App Icon";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = dinnerAppiMessage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = skyenov.dinnerApp.dinnerAppiMessage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		5844E5122344397900BA0E56 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -285,6 +452,7 @@
 		5844E5152344397900BA0E56 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = dinnerApp/Info.plist;
@@ -302,6 +470,7 @@
 		5844E5162344397900BA0E56 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = dinnerApp/Info.plist;
@@ -319,6 +488,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		58429D8923505F1700DA91E4 /* Build configuration list for PBXNativeTarget "dinnerAppiMessage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58429D8A23505F1700DA91E4 /* Debug */,
+				58429D8B23505F1700DA91E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5844E4FD2344397700BA0E56 /* Build configuration list for PBXProject "dinnerApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
