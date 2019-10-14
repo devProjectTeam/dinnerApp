@@ -46,7 +46,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="G1W-LN-wb3">
-                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="cR5-px-dzk"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="cR5-px-dzk">
+                            <connections>
+                                <action selector="editPressed:" destination="xVt-TG-IWc" id="cXb-6m-1Hu"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="bsX-Gg-Fik">
                             <connections>
                                 <segue destination="KDz-tQ-uDQ" kind="presentation" identifier="addNewPlace" id="T5y-ls-UPv"/>
@@ -148,6 +152,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="90"/>
                                 <state key="normal" title="+"/>
+                                <connections>
+                                    <action selector="selectButtonTapped:" destination="NzR-aE-383" eventType="touchUpInside" id="g1R-aS-tPp"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
