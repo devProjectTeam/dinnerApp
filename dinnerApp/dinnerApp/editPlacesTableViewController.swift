@@ -12,10 +12,18 @@ import CoreData
 class editPlacesTableViewController: UITableViewController,UITextViewDelegate {
 //var selectedPlace: Places!
   var newPlaces = [Placeslist]()
+<<<<<<< HEAD
     
     var selectedPlace = ""
     var selectedIndexpath = 0 
     
+=======
+    
+    @IBOutlet weak var placeDisplay: UITextField!
+    
+    @IBOutlet weak var saveButton: UIBarButtonItem!
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+>>>>>>> 08689f347cae294cc11e1f42de1e34d45da91d29
     
     @IBOutlet weak var placeDisplay: UITextField!
     
@@ -26,9 +34,15 @@ class editPlacesTableViewController: UITableViewController,UITextViewDelegate {
     override func viewDidLoad() {
     
         super.viewDidLoad()
+<<<<<<< HEAD
        
             placeDisplay?.text = selectedPlace
      
+=======
+        if let selectedPlace = placeDisplay {
+            placeDisplay?.text = selectedPlace.text
+        }
+>>>>>>> 08689f347cae294cc11e1f42de1e34d45da91d29
       updateSaveButtonState()
 
     }
@@ -47,6 +61,7 @@ class editPlacesTableViewController: UITableViewController,UITextViewDelegate {
     
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+<<<<<<< HEAD
         if selectedPlace.isEmpty {
             super.prepare(for: segue, sender: sender)
             guard segue.identifier == "saveUnwind" else {return}
@@ -86,6 +101,17 @@ class editPlacesTableViewController: UITableViewController,UITextViewDelegate {
     }
     func savePlaces() {
     
+=======
+        super.prepare(for: segue, sender: sender)
+        guard segue.identifier == "saveUnwind" else {return}
+        let newPlace = Placeslist(context: self.context)
+        newPlace.placeName = placeDisplay.text!
+        self.savePlaces()
+        self.newPlaces.append(newPlace)
+    }
+    
+    func savePlaces() {
+>>>>>>> 08689f347cae294cc11e1f42de1e34d45da91d29
         do {
             try context.save()
         } catch{

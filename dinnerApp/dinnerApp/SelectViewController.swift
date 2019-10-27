@@ -26,7 +26,11 @@ class SelectViewController: UIViewController {
             let result = try context.fetch(request)
             let data = result as! [NSManagedObject]
             allPlaces = data.map({placesList in placesList.value(forKey: "placeName") as! String})
+<<<<<<< HEAD
             print(allPlaces)
+=======
+            //print(allPlaces)
+>>>>>>> 08689f347cae294cc11e1f42de1e34d45da91d29
             if allPlaces.isEmpty {
                 let refreshAlert = UIAlertController(title: "Hellooo", message: "There are no places to select, Please add places from the places tab", preferredStyle: UIAlertController.Style.alert)
                 refreshAlert.addAction(UIAlertAction(title: "Cancel", style: .default, handler: nil))

@@ -108,25 +108,55 @@ class TableViewController: UITableViewController {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }
         
+<<<<<<< HEAD
     }
     
     override func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
         let place = placesArray[indexPath.row]
         performSegue(withIdentifier: "editPlace", sender: place)
+=======
+>>>>>>> 08689f347cae294cc11e1f42de1e34d45da91d29
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "editPlace"
+      /*  if segue.identifier == "editPlace"
         {
             let indexPath = tableView.indexPathForSelectedRow!
             let places = placesArray[indexPath.row]
             let navController = segue.destination as! UINavigationController
             let editAddedPlacesTableViewController = navController.topViewController  as! editPlacesTableViewController
+<<<<<<< HEAD
             editAddedPlacesTableViewController.selectedPlace  = places.placeName ?? ""
             let editAddedPlacesTableViewControllerIndexPath = navController.topViewController as! editPlacesTableViewController
             editAddedPlacesTableViewControllerIndexPath.selectedIndexpath = indexPath.row
             
             
+=======
+            editAddedPlacesTableViewController.selectedPlace = places
+        }*/
+    }
+    
+    func loadItems() {
+        let request : NSFetchRequest<Placeslist> = Placeslist.fetchRequest()
+        do {
+            placesArray = try context.fetch(request)
+        } catch
+        {
+            print("Error fetching data from context \(error)")
+>>>>>>> 08689f347cae294cc11e1f42de1e34d45da91d29
         }
+        
+    }
+    
+    //To reload list of places tableview
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        loadItems()
+        tableView.reloadData()
+    }
+    @IBAction func editPressed(_ sender: UIBarButtonItem) {
+        
+        self.isEditing = !self.isEditing
+
     }
     
     func loadItems() {
